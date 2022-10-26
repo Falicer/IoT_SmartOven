@@ -1,8 +1,23 @@
 # Internet of Things Smart Oven
 Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manual gaat over het verbinden van je product tot je device of Google Home. De fouten worden in deze manual genoemt zo ver ik ze heb kunnen ontdekken.
 
-*Last updated 27-10-2022 00:35*
+*Last updated 27-10-2022 00:45*
 *By Raekwon Gerold*
+
+## Inhoudsopgave
+1. Required parts list
+2. Connecting your Oven to google home
+3. Connecting your oven to the app for the first time
+4. Using the app/screen
+5. Voice Commands start up & Voice command list
+6. How the night mode works
+7. Telegram connection test
+
+## Required parts list.
+- Arduino
+- Arduino IDE
+- Ledstrip
+- Telegram
 
 ## Connecting your Oven to google home
 <details open>
@@ -29,7 +44,7 @@ Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manua
 
 </details>
 
-## Connecting oven to the app for the first time
+## Connecting your oven to the app for the first time
 <details open>
 
 - Open the app
@@ -55,7 +70,7 @@ Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manua
   - No connection to the oven, either the oven is turned off or there's something wrong with your connection at home.(check with your provider if the router isn't being updated)
 </details>
 
-## Voice Commands
+## Voice Commands start up & Voice command list
 <details open>
 
 By integrating the use of voice, U can operate your oven vocally throughout the house, if the oven can hear you.
