@@ -197,3 +197,9 @@ void loop()
 <img src="https://i.gyazo.com/4ccfffb5a383ea985f536ca196d73038.png" alt="Fall into Despair"
 
 </details>
+ 
+## Sources
+1. [WorldTime API](http://worldtimeapi.org/pages/examples)
+2. [Google Home API](https://developers.home.google.com/)
+3. [Telegram bot arduino guide](https://randomnerdtutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/)
+4.[Adafruit IO Source Quickguide](https://docs.google.com/document/d/13Dvwrig2d11fmS7UafYM0o4nzgMpfTHDadrS2Py0mg0/edit)
