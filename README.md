@@ -77,7 +77,7 @@ Oven put your pre-fix to x
 - Based on the time it will turn on nightmode around 8 PM.
 - You can adjust this time through the settings of the app.
 
-It should be working through code like this.
+It should be working through code like this. according to [WorldTime API](http://worldtimeapi.org/pages/examples)
 ```
 # curl "http://worldtimeapi.org/api/timezone/Europe/Amsterdam"
 {
@@ -99,5 +99,77 @@ It should be working through code like this.
 }
 ```
 
-- I tried it myself with not much success.
+<details open>
+
+### Installing the libraries
+- Open the libraries tab and download the following:
+    - Install UniversalTelegramBot by Brian Lough
+    - Install ArduinoJson by Benoit Blanchon
+
+### Installing Telegram and creating a bot
+- Open Telegram and make a Telegram account
+- Search for the BotFather
+<img src="https://i.gyazo.com/57bd44fa2332bf159b12591aa5bb36ed.png" width="375px" alt="The BotFather">
+
+- Follow the setup for a new bot
+<img src="https://i.gyazo.com/f0a67450174155640180bc3bd18a7853.png" alt="BotFather Conversation">
+
+- Keep the bot name, username and bot token
+- Copy this code into Arduino:
+```
+#include <ESP8266WiFi.h>
+#include <WiFiClientSecure.h>
+#include <TelegramBot.h>
+
+#define LED 15
+#define DATA_PIN D5
+
+const char* ssid = "wifi_username";
+const char* password = "wifi_password";
+
+const char BotToken[] = "bot_token";
+
+WiFiClientSecure net_ssl;
+TelegramBot bot (BotToken, net_ssl);
+
+void setup()
+{
+  Serial.begin(115200);
+  while (!Serial) {} //Start running when the serial is open
+  delay(3000);
+  Serial.print("Connecting WiFi.");
+  Serial.println(ssid);
+  while (WiFi.begin(ssid, password) != WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+  bot.begin();
+  pinMode(LED, OUTPUT);
+}
+void loop() 
+{  
+  message m = bot.getUpdates(); // Read new messages  
+  if (m.text.equals("on")) 
+  {  
+    digitalWrite(LED, 1);   
+    bot.sendMessage(m.chat_id, "LED is ON");
+  }  
+  else if (m.text.equals("off")) 
+  {  
+    digitalWrite(LED, 0);   
+    bot.sendMessage(m.chat_id, "LED is OFF");  
+  } 
+}
+```
+- Fill in wifi_username/wifi_pass and bot_token
+- Make sure your Arduino is connected 
+<img src="https://i.gyazo.com/8a400f8599551d8f3acc9e89acbe50b6.jpg" alt="connected Arduino">
+
+- Verify the code
+<img src="https://i.gyazo.com/90506e511d885f17daf4e0e9fd57cd91.png" alt="Exit Status 1">
+
+
 </details>
