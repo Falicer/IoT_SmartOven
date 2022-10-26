@@ -1,7 +1,7 @@
 # Internet of Things Smart Oven
 This is a manual for the Smart Oven. This oven is a IoT product and this manual is about connecting this oven to your device or Google Home. The errors wil be shown in this manual as far as i could find them.
 
-*Last updated 27-10-2022 00:45*
+*Last updated 27-10-2022 01:35*
 *By Raekwon Gerold*
 
 ## Inhoudsopgave
