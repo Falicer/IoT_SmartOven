@@ -6,19 +6,33 @@ Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manua
 
 - During installation of your oven connect it to the wi-fi and turn it on Bluetooth.
 - With the google home app, press the + sign
+<img src="Screenshot_20221026_113429.jpg" width="375px" alt="Google Home Default">
+
 - Set up device
+<img src="Screenshot_20221026_113436.jpg" width="375px" alt="Google Home setup device">
+
 - New Device
-- Allow new devices
+<img src="Screenshot_20221026_113443.jpg" width="375px" alt="Google Home new device">
+
+- Select your household
+<img src="Screenshot_20221026_113543.jpg" width="375px" alt="Google Home allow household select">
+
 - It will automatically search for it
-  - if it fails:
+<img src="Screenshot_20221026_113552.jpg" width="375px" alt="Google Home allow searching devices">
+
+ - if it fails:
   - you can manually add it (possible through display)
+<img src="Screenshot_20221026_113629.jpg" width="375px" alt="Google Home allow manual adding">
+
 </details>
 
-## Connecting oven to the app (make screens for this)
+## Connecting oven to the app for the first time
 <details open>
 
 - Open the app
-- Connect to the oven device
+- Connect to the nearest oven device
+<img src="https://i.gyazo.com/2745ab3c9aea9a15387bfde378c3be69.png" width="375px" alt="App connecting to nearest oven">
+
 - the device should be linked now
   - If it fails:
   - Check if the oven is on and properly connected
@@ -63,7 +77,7 @@ Oven put your pre-fix to x
 - Based on the time it will turn on nightmode around 8 PM.
 - You can adjust this time through the settings of the app.
 
-It will be done through simple code like this
+It should be working through code like this.
 ```
 # curl "http://worldtimeapi.org/api/timezone/Europe/Amsterdam"
 {
@@ -84,4 +98,6 @@ It will be done through simple code like this
   "week_number": 43
 }
 ```
+
+- I tried it myself with not much success.
 </details>
