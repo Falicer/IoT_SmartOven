@@ -98,7 +98,9 @@ It should be working through code like this. according to [WorldTime API](http:/
   "week_number": 43
 }
 ```
+</details>
 
+## Telegram connection test
 <details open>
 
 ### Installing the libraries
