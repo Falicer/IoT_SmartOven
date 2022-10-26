@@ -8,10 +8,9 @@ This is a manual for the Smart Oven. This oven is a IoT product and this manual 
 1. Required parts list
 2. Connecting your Oven to google home
 3. Connecting your oven to the app for the first time
-4. Using the app/screen
-5. Voice Commands start up & Voice command list
-6. How the night mode works
-7. Telegram connection test
+4. Voice Commands start up & Voice command list
+5. How the night mode works
+6. Telegram connection test
 
 ## Required parts list.
 - Arduino
@@ -55,19 +54,6 @@ This is a manual for the Smart Oven. This oven is a IoT product and this manual 
   - If it fails:
   - Check if the oven is on and properly connected
   - Try again.
-</details>
-
-## Using the app/screen
-<details open>
-
-- Open the app
-- choose the option you wanna go for ex. pre-heat
-- select the option.
-- get the confirmation
-- it should be working
-  - If it fails:
-  - If you got the confirmation but it didn't pre-heat, manually pre-heat the oven and try to reconnect your device to the oven
-  - No connection to the oven, either the oven is turned off or there's something wrong with your connection at home.(check with your provider if the router isn't being updated)
 </details>
 
 ## Voice Commands start up & Voice command list
