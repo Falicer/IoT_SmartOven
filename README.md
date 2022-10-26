@@ -1,5 +1,5 @@
 # Internet of Things Smart Oven
-Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manual gaat over het verbinden van je product tot je device of Google Home. De fouten worden in deze manual genoemt zo ver ik ze heb kunnen ontdekken.
+This is a manual for the Smart Oven. This oven is a IoT product and this manual is about connecting this oven to your device or Google Home. The errors wil be shown in this manual as far as i could find them.
 
 *Last updated 27-10-2022 00:45*
 *By Raekwon Gerold*
