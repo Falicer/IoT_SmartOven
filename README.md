@@ -1,6 +1,9 @@
 # Internet of Things Smart Oven
 Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manual gaat over het verbinden van je product tot je device of Google Home. De fouten worden in deze manual genoemt zo ver ik ze heb kunnen ontdekken.
 
+*Last updated 27-10-2022 00:35*
+*By Raekwon Gerold*
+
 ## Connecting your Oven to google home
 <details open>
 
@@ -55,6 +58,7 @@ Dit is een manual voor de Smart Oven. Deze oven is een IoT product en deze manua
 ## Voice Commands
 <details open>
 
+By integrating the use of voice, U can operate your oven vocally throughout the house, if the oven can hear you.
 - The Oven has a pre-fix you can attach to your oven by saying
 ```
 Oven put your pre-fix to x
@@ -73,6 +77,7 @@ Oven put your pre-fix to x
 ## How the night mode works
 <details open>
 
+Night mode is the state of the oven where it won't make a loud beeping noise when done and will notify the owner through the app with notifications.
 - Through your internet or the World Time API, the oven will detect the time.
 - Based on the time it will turn on nightmode around 8 PM.
 - You can adjust this time through the settings of the app.
@@ -173,5 +178,7 @@ void loop()
 - Verify the code
 <img src="https://i.gyazo.com/90506e511d885f17daf4e0e9fd57cd91.png" alt="Exit Status 1">
 
+- Got an exit status 1 error.
+<img src="https://i.gyazo.com/4ccfffb5a383ea985f536ca196d73038.png" alt="Fall into Despair"
 
 </details>
