@@ -111,8 +111,8 @@ It should be working through code like this. according to [WorldTime API](http:/
 
 ### Installing the libraries
 - Open the libraries tab and download the following:
-    - Install UniversalTelegramBot by Brian Lough
-    - Install ArduinoJson by Benoit Blanchon
+    - Install UniversalTelegramBot Version 1.3.0 by Brian Lough
+    - Install ArduinoJson Version 6.19.4 by Benoit Blanchon
 
 ### Installing Telegram and creating a bot
 - Open Telegram and make a Telegram account
@@ -182,6 +182,25 @@ void loop()
 - Got an exit status 1 error.
 <img src="https://i.gyazo.com/4ccfffb5a383ea985f536ca196d73038.png" alt="Fall into Despair">
 
+- Uninstall ArduinoJSon 6.19.4
+- Install ArduinoJson version 6.15.2
+
+![image](https://user-images.githubusercontent.com/16877265/198269381-9971596f-dbcf-40e5-802c-6b4da2cd50b9.png)
+
+- Try the code again
+- Get another exit status 1 error
+<img src="https://i.gyazo.com/90506e511d885f17daf4e0e9fd57cd91.png" alt="Exit Status 1">
+
+- Uninstall ArduinoJson 6.15.2
+- Install ArduinoJson 6.13.0
+
+![image](https://user-images.githubusercontent.com/16877265/198269865-a07d4f37-a936-4cb9-ad1f-2423cfd71635.png)
+
+- Try the code again
+- Get Another exit status 1 error.
+<img src="https://i.gyazo.com/90506e511d885f17daf4e0e9fd57cd91.png" alt="Exit Status 1">
+
+Maybe it's a compatibility issue?
 </details>
  
 ## Sources
